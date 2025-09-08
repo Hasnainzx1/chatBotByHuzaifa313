@@ -1,4 +1,3 @@
-"use client";
 
 import ChatPage from "./ChatPage";
 

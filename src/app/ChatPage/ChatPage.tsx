@@ -18,7 +18,6 @@ const ChatPage = () => {
 
   const languages: Language[] = ["English", "Urdu"]
 
-  // Auto-scroll to bottom when new messages are added
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }, [messages, isLoading])
@@ -53,7 +52,7 @@ const ChatPage = () => {
     <div className="flex justify-center items-center w-full h-full bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
       <div className="w-full max-w-4xl h-[85vh] rounded-2xl bg-white shadow-xl overflow-hidden flex flex-col">
         
-        {/* Header with Language Selector */}
+      
         <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-4 flex items-center justify-between relative">
           <div className="flex items-center">
             <div className="text-xl font-bold mr-4">AI Chat</div>
