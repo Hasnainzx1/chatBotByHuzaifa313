@@ -9,7 +9,7 @@ interface Message {
   isUser: boolean;
 }
 
-export const ChatPage = () => {
+const ChatPage = () => {
   const [open, setOpen] = useState<boolean>(false)
   const { language, setLanguage, t } = useLanguage()
   const [messages, setMessages] = useState<Message[]>([])
@@ -167,3 +167,5 @@ export const ChatPage = () => {
     </div>
   )
 }
+
+export default ChatPage;

@@ -1,4 +1,4 @@
-import { ChatPage } from "./ChatPage/page";
+import  ChatPage  from "./ChatPage/page";
 import Footer from "./Components/Footer";
 import { LanguageProvider } from "./Components/LanguageContext";
 import Navbar from "./Components/Navbar";
