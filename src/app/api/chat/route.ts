@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { NextRequest, NextResponse } from "next/server";
 
 export async function POST(req: NextRequest) {
@@ -37,6 +38,7 @@ export async function POST(req: NextRequest) {
     let botMessage = "No response";
 
     // Correct response parsing for Gemini
+
     if (data?.candidates?.length > 0) {
       const candidate = data.candidates[0];
       if (candidate?.content?.parts?.length > 0) {

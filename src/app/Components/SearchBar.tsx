@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import { TextField, InputAdornment, IconButton, Box } from "@mui/material"
 import SearchIcon from "@mui/icons-material/Search"
@@ -5,7 +6,7 @@ import { styled } from "@mui/material/styles"
 import { useLanguage } from "./LanguageContext"
 import { useState } from "react"
 
-const StyledTextField = styled(TextField)(({ theme }) => ({
+const StyledTextField = styled(TextField)(() => ({
   backgroundColor: "white",
   borderColor: "#1976d2 !important",
   borderWidth: "2px",
