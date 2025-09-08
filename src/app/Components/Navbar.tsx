@@ -37,12 +37,7 @@ const Navbar = () => {
                 >
                   Home
                 </Link>
-                <Link 
-                  href="/PortfolioPage" 
-                  className="text-white hover:bg-blue-700 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
-                >
-                  More
-                </Link>
+                
               </div>
             </div>
 
